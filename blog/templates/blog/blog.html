@@ -1,7 +1,13 @@
 {%  extends "personal/header.html" %}
 
 {% block content %}
+  <h1>William Cory</h1>
   {% for post in object_list %}
-    <h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}"> {{post.title}}</a><h5>
+    <div class="post">
+      <h5><a href="/blog/{{post.id}}"> {{post.title}}</a></h5>
+      <p>{{ post.body|make_list|slice:'1:385'|join:'' }}</p>
+      <div class="blog-date">{{ post.date|date:"Y-m-d" }}</div>
+    </div>
   {% endfor %}
 {% endblock %}
+
