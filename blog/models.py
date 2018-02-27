@@ -4,7 +4,7 @@ from django.db import models
 class Post(models.Model):
   title = models.CharField(max_length=140)
   body = models.TextField()
-  html = models.TextField(default='no html here')
+  html = models.TextField(default='no post found')
   date = models.DateTimeField()
 
   def __str__(self):
