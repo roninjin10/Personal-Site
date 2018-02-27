@@ -27,7 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'still-taiga-34315.herokuapp.com',
-    '127.0.0.1',
 ]
 
 
