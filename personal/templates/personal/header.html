@@ -6,56 +6,87 @@
   <meta charset="utf-8" />
   <meta charset="UTF-8">
 
-    <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta name="author" content="William Cory">
+  <meta name="description" content="William explores web development, data science, cryptocurrency, and varius other interests in his blog.">
+  <meta name="twitter:description" content="William explores web development, data science, cryptocurrency, and varius other interests in his blog.">
+  <meta name="twitter:site" content="@roninjin10">
 
-    <title>Twittler</title>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    
-  <style type="text/css">
-    html,
-    body {
-      height:100%
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <style>
+    html, body {
+      height: 100%;
+      font-family: Ubuntu;
+    }
+
+    .icon {
+      font-size: 28px;
+    }
+
+    .container-fluid {
+      max-width: 1200px
+
+    }
+    .navbar {
+      border-bottom: 1px solid gray;
+      padding-bottom: 0px;
+      text-decoration: none;
     }
   </style>
 </head>
 
 
-<body class="body" style="background-color:#f6f6f6">
+<body class="body">
   <div class="container-fluid" style="min-height:95%; ">
-    <div class="row">
-        <div class="col-sm-2">
-          <br>
-          <center>
-          <img src="http://i0.wp.com/cdn.techgyd.com/save-whatsapp-profile-picture-image3.jpg?resize=337%2C337" class="responsive-img" style='max-height:100px;' alt="face">
-          </center>
-        </div>
-        <div class="col-sm-10">
-          <br>
-          <center>
-          <h3>Code Every Day</h3>
-          </center>
-        </div>
-    </div><hr>
+    
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="row">
-      <div class="col-sm-2">
-      <br>
-
-      <br>
-       <!-- Great, til you resize. -->
-      <!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
-      <div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
-        <ul class="nav nav-pills nav-stacked">
-        <li><a href='/'>Home</a></li>
-        <li><a href='/blog/'>Blog</a></li>
-        <li><a href='/projects/'>Projects</a></li>
-        <li><a href='/contact/'>Contact</a></li>
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mc-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">contact</a>
+          </li>
         </ul>
-      </div> <!--well bs-sidebar affix-->
-      </div> <!--col-sm-2-->
-      <div class="col-sm-10">
+
+        <ul class="navbar-nav ml-auto" id="social">
+          <li class="nav-item">
+            <a href="https://twitter.com/roninjin10" title="Follow me!" class="nav-link icon"><i class="fab fa-twitter icon"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/roninjin10" title="Code with me!" class="icon nav-link"><i class="fab fa-github icon"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/william-cory-bbb375156/" title="Connect with me!" class="nav-link icon"><i class="fab fa-linkedin icon"></i></a>
+          </li>
+        </ul>
+        <!--
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search Twittler" aria-label="Search" />
+          <button class="btn create-tweet search-button" type="submit">Search</button>
+        </form>
+        -->
+      </div>
+    </nav>
+
+    <div class="row">
+
+      <div>
       
       <div class='container-fluid'>
       <br><br>
@@ -66,9 +97,11 @@
     </div> 
   </div>
   <footer>
+    <nav class="navbar navbar-expand-md navbar-light">
     <div class="container-fluid" style='margin-left:15px'>
-      <p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">GitHub</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a></p>
+      <ul class="navbar-nav mr-auto"><li><a href="#" target="blank" class="nav-item nav-link">Contact</a></li>  <li><a href="#" target="blank" class="nav-item nav-link">GitHub</a></li>  <li><a href="#" target="blank" class="nav-item nav-link">LinkedIn</a></li>  <li><a href="#" target="blank" class="nav-item nav-link">Twitter</a></li></ul>
     </div>
+  </nav>
   </footer> 
 
 
