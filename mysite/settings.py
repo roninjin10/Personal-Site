@@ -26,7 +26,7 @@ SECRET_KEY = 'l+!!1uly0hr0p@%6h&7lvi(hs*&4tcmzh-f)ni_c!qnthk%mv+'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://rocky-hamlet-60633.herokuapp.com/',
+    'rocky-hamlet-60633.herokuapp.com/',
 ]
 
 
