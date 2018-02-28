@@ -5,7 +5,7 @@
   {% for post in content %}
       <h2 class="section-title">{{post.title}}</h2>
       {{ post.html }}
-      <div class="blog-date">{{ post.date|date:"b y" }}</div>
+      <div class="blog-date">{{ post.body|date:"b y" }}</div>
   {% endfor %}
 {% endblock %}
 
