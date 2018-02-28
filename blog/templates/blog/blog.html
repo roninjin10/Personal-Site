@@ -4,9 +4,8 @@
   <h2 class="section-title">William Cory</h2>
 
   {% for post in object_list %}
-    {{ post.title|replace(" ","-") }}
     <div class="post">
-      <h5><a href="/blog/{{ post.title|replace(" ","-") }}"> {{post.title}}</a></h5>
+      <h5><a href="/{{ post.title.split|join:"-" }}"> {{post.title}}</a></h5>
       <p>{{ post.body|make_list|slice:'0:385'|join:'' }} ...</p>
       <div class="blog-date">{{ href_link }}</div>
     </div>
