@@ -6,7 +6,7 @@
   {% for post in object_list %}
     <div class="post">
       <h5><a href="/{{ post.title.split|join:"-" }}"> {{post.title}}</a></h5>
-      <p>{{ post.body|make_list|slice:'0:385'|join:'' }} ...</p>
+      <p>{{ post.body|truncatewords:35 }} ...</p>
       <div class="blog-date">{{ href_link }}</div>
     </div>
   {% endfor %}
