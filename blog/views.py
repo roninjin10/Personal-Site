@@ -6,4 +6,4 @@ def blog_post(request, title):
     b = Post(title= title.replace('-',' '))
   except Post.DoesNotExist:
     raise Http404("Post does not exist")
-  return render(request, 'blog/blog_post.html', {'content': b})
+  return render(request, 'blog/blog_post.html', {'content': [b]})
