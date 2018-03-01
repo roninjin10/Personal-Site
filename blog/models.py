@@ -1,13 +1,14 @@
 from django.db import models
 
+
 # Create your models here.
 class Post(models.Model):
-  title = models.CharField(max_length=140)
-  body = models.TextField()
-  date = models.DateTimeField()
+    title = models.CharField(max_length=140)
+    body = models.TextField()
+    date = models.DateTimeField()
 
-  def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title
 
-  def body_as_list(self):
-    return self.body.split('\n')
+    def body_as_list(self):
+        return self.body.split('\n')

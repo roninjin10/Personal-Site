@@ -4,9 +4,7 @@
 
   {% for post in content %}
       <h2 class="section-title">{{post.title}}</h2>
-      {% for par in post.body_as_list %}
-        <p>{{ par|safe }}</p>
-      {% endfor %}
+      <div>{{ par|safe }}</div>>
       <br>
       <div class="blog-date">{{ post.date|date:"b y" }}</div>
   {% endfor %}
